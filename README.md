@@ -1,0 +1,1 @@
+Application implementing a personal blog
