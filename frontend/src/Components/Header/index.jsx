@@ -4,7 +4,7 @@ import styles from './header.module.scss';
 
 function Header() {
     return (
-        <header className={styles.header_container}>
+        <header className={styles.container}>
             <h1 className={styles.title}>Dungeons and Dragons Blog</h1>
             <NavBar />
             <LogIn />
