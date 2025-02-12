@@ -1,7 +1,7 @@
 import styles from './home.module.scss';
 
 function Home() {
-    return (<div className={styles.homeCo}>
+    return (<div className={styles.home_container}>
     </div>)
 }
 
