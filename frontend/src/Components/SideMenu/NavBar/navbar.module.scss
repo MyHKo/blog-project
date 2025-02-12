@@ -1,13 +1,20 @@
 .list {
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 2rem;
 }
 
 .list_item{
-  display: inline;
-  margin: 0 3rem;
+  font-size: 1.2rem;
+  display: block;
+  margin: 1rem 0 2rem 0;
   cursor: pointer;
   position: relative;
+  color: var(--main-color-white);
+}
+
+.item_text {
+  position: relative;
+  display: inline;
 
   &::after {
     position: absolute;

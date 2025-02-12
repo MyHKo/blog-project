@@ -2,7 +2,7 @@ import styles from './login.module.scss'
 
 function LogIn() {
     return (
-        <h1 className={styles.container}>Log In</h1>
+        <h1 className={styles.container}><span className={styles.text}>Log In</span></h1>
     )
 }
 
