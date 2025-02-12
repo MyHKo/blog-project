@@ -1,4 +1,4 @@
-import Post from "@components/Post/index.jsx";
+import Post from "@components/Post";
 import styles from './home.module.scss';
 
 function Home() {
