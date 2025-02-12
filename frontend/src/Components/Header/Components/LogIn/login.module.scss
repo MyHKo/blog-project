@@ -1,14 +1,7 @@
-.nav_list {
-  list-style: none;
-  padding: 0;
-}
-
-.list_item{
-  display: inline;
-  margin: 0 3rem;
-  cursor: pointer;
+.log_in {
   position: relative;
-
+  cursor: pointer;
+  
   &::after {
     position: absolute;
     bottom: 0;
