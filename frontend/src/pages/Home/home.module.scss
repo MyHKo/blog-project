@@ -1,1 +1,15 @@
-.home_container
+.home_container {
+  margin-top: 4.4rem;
+  padding: 20px;
+  min-height: 600px;
+  width: 100%;
+  background-color: var(--main-color-light);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+  color: var(--main-color-dark);
+}
