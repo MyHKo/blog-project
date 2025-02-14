@@ -1,15 +1,13 @@
 import Home from "@pages/Home";
-import Header from "@components/Header";
-import SideMenu from "@components/SideMenu";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './app.module.scss'
+import DashBoard from "@components/DashBoard/index.jsx";
 
 function App() {
 
   return (<>
-   <Header />
-   <SideMenu />
-   <Home />
+          <DashBoard />
+          <Home />
       </>
   )
 }
