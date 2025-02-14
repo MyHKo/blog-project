@@ -1,0 +1,8 @@
+.container {
+  display: none;
+  cursor: pointer;
+
+  @media(max-width: 980px) {
+    display: block;
+  }
+}
