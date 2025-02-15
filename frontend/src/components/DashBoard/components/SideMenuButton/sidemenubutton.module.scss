@@ -6,6 +6,14 @@
   display: none;
   cursor: pointer;
 
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
   @media(max-width: 980px) {
     display: block;
   }
