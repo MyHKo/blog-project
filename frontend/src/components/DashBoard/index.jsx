@@ -1,11 +1,14 @@
-import Header from "@components/Header/index.jsx";
-import SideMenu from "@components/SideMenu/index.jsx";
+import SideMenu from "@components/DashBoard/components/SideMenu/index.jsx";
+import SideMenuButton from "@components/DashBoard/components/SideMenuButton/index.jsx";
+import {useState} from "react";
 
 function DashBoard() {
+    const [isSideMenuVisible, setIsSideMenuVisible] = useState(false);
+
     return (
         <div>
-            <Header />
-            <SideMenu />
+            <SideMenuButton isSideMenuVisible={isSideMenuVisible} setIsSideMenuVisible={setIsSideMenuVisible} />
+            <SideMenu isSideMenuVisible={isSideMenuVisible} setIsSideMenuVisible={setIsSideMenuVisible} />
         </div>
     )
 }
