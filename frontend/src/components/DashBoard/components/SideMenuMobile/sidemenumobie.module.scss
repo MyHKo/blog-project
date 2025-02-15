@@ -1,5 +1,6 @@
 .container{
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -7,10 +8,12 @@
   width: 100%;
   padding-top: 4.4rem;
   background-color: rgba(0, 0, 0, 0.7);
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .container_visible{
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .content_container{
@@ -18,12 +21,13 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 0rem;
+  width: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: var(--main-color-dark);
   padding: 0 0 22rem 5rem;
+  transition: width 0.3s ease-in-out;
 }
 
 .content_container_visible{
