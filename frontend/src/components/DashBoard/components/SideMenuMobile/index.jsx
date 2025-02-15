@@ -1,11 +1,21 @@
 import NavBarMobile from "@components/DashBoard/components/SideMenuMobile/NavBarMobile";
 import LogInMobile from "@components/DashBoard/components/SideMenuMobile/LogInMobile";
 import styles from "./sidemenumobie.module.scss"
+import PropTypes from "prop-types";
 
-function SideMenuMobile() {
+function SideMenuMobile({ isVisible }) {
+    const containerStyle = isVisible
+        ? `${styles.container}`
+        : `${styles.container} ${styles.container_visible}`
+
+    const contentContainerStyle = isVisible
+        ? `${styles.content_container}`
+        : `${styles.content_container} ${styles.content_container_visible}`
+
+
     return (
-        <div className={styles.container}>
-            <div className={styles.content_container}>
+        <div className={containerStyle}>
+            <div className={contentContainerStyle}>
                 <NavBarMobile />
                 <LogInMobile />
             </div>
@@ -14,3 +24,7 @@ function SideMenuMobile() {
 }
 
 export default SideMenuMobile
+
+SideMenuMobile.propTypes = {
+    isVisible: PropTypes.bool.isRequired,
+}
