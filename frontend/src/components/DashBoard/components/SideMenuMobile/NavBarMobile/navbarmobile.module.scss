@@ -1,0 +1,22 @@
+@use "@styles/mixins" as *;
+.list {
+  list-style: none;
+  padding: 0 0 0 5rem;
+}
+
+.list_item{
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: block;
+  margin: 1rem 0 2rem 0;
+  cursor: pointer;
+  position: relative;
+  color: var(--main-color-white);
+}
+
+.item_text {
+  position: relative;
+  display: inline;
+
+  @include underline-effect()
+}
