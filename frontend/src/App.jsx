@@ -1,6 +1,6 @@
 import Home from "@pages/Home";
-import Header from "@components/Header/index.jsx";
-import DashBoard from "@components/DashBoard/index.jsx";
+import Header from "@components/Header";
+import DashBoard from "@components/DashBoard";
 import './app.module.scss'
 
 function App() {

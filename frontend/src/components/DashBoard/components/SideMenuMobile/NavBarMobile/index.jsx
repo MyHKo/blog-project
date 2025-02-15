@@ -1,6 +1,5 @@
 import styles from './navbarmobile.module.scss'
 
-
 function NavBarMobile() {
     return (
         <nav>
