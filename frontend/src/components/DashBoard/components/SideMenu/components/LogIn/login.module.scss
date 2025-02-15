@@ -1,3 +1,5 @@
+@use '@styles/mixins' as *;
+
 .container {
   font-size: 1.2rem;
   color: var(--main-color-white);
@@ -10,24 +12,6 @@
     position: relative;
     display: inline;
 
-    &::after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 0;
-      content: '';
-      border-top: solid 1px #fff;
-      opacity: 0;
-      transition:
-              width 0.5s ease
-    }
-
-    &:hover{
-      &::after{
-        opacity: 1;
-        width: 100%;
-      }
-    }
+    @include underline-effect()
   }
 }
