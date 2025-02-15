@@ -9,8 +9,14 @@
 }
 
 .content_container{
-  width: 33rem;
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100%;
-  padding-top: 1rem;
+  width: 33rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: var(--main-color-dark);
+  padding: 0 0 22rem 5rem;
 }

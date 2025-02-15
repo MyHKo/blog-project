@@ -1,0 +1,19 @@
+@use '@styles/mixins' as *;
+
+.container {
+  font-family: Arial, sans-serif;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: var(--main-color-white);
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 0 0 4rem 0;
+
+  .text {
+    position: relative;
+    display: inline;
+
+    @include underline-effect()
+  }
+}
