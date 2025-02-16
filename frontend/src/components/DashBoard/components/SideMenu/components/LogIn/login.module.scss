@@ -1,12 +1,13 @@
 @use '@styles/mixins' as *;
 
 .container {
+  font-family: Arial, sans-serif;
   font-size: 1.2rem;
   color: var(--main-color-white);
   display: block;
   position: relative;
   cursor: pointer;
-  padding: 0 0 1.5rem 2rem;
+  padding: 0 0 6rem 2rem;
 
   .text {
     position: relative;
