@@ -3,7 +3,7 @@ import LogInMobile from "@components/DashBoard/components/SideMenuMobile/LogInMo
 import styles from "./sidemenumobie.module.scss"
 import PropTypes from "prop-types";
 
-function SideMenuMobile({ isVisible }) {
+function SideMenuMobile({ isVisible, setIsVisible }) {
     const containerStyle = isVisible
         ? `${styles.container}`
         : `${styles.container} ${styles.container_visible}`
@@ -24,7 +24,7 @@ function SideMenuMobile({ isVisible }) {
                 <LogInMobile/>
             </div>
         </div>
-        <span className={backgroundStyle}/>
+        <span className={backgroundStyle} onClick={() => setIsVisible(!isVisible)}/>
         </>
     )
 }
@@ -33,4 +33,5 @@ export default SideMenuMobile
 
 SideMenuMobile.propTypes = {
     isVisible: PropTypes.bool.isRequired,
+    setIsVisible: PropTypes.func.isRequired,
 }
