@@ -8,18 +8,20 @@ function SideMenuMobile({ isVisible }) {
         ? `${styles.container}`
         : `${styles.container} ${styles.container_visible}`
 
-    const contentContainerStyle = isVisible
-        ? `${styles.content_container}`
-        : `${styles.content_container} ${styles.content_container_visible}`
+    const backgroundStyle = isVisible
+        ? `${styles.background}`
+        : `${styles.background} ${styles.background_visible}`
 
 
-    return (
+    return (<>
         <div className={containerStyle}>
-            <div className={contentContainerStyle}>
-                <NavBarMobile />
-                <LogInMobile />
+            <div className={styles.content_container}>
+                <NavBarMobile/>
+                <LogInMobile/>
             </div>
         </div>
+        <span className={backgroundStyle}/>
+        </>
     )
 }
 

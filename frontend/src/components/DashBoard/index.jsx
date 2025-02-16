@@ -10,6 +10,7 @@ function DashBoard() {
         <div>
             <SideMenuButton isSideMenuVisible={isSideMenuVisible} setIsSideMenuVisible={setIsSideMenuVisible} />
             <SideMenuMobile isVisible={isSideMenuVisible}/>
+            {/*<SideMenu />*/}
         </div>
     )
 }
