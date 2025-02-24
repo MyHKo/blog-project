@@ -5,16 +5,16 @@ import PropTypes from "prop-types";
 
 function SideMenuMobile({ isVisible, setIsVisible }) {
     const containerStyle = isVisible
-        ? `${styles.container}`
-        : `${styles.container} ${styles.container_visible}`
+        ? `${styles.container}  ${styles.container_visible}`
+        : `${styles.container}`
 
     const backgroundStyle = isVisible
-        ? `${styles.background}`
-        : `${styles.background} ${styles.background_visible}`
+        ? `${styles.background}  ${styles.background_visible}`
+        : `${styles.background}`
 
     const contentContainerStyle = isVisible
-        ? `${styles.content_container}`
-        : `${styles.content_container} ${styles.content_container_visible}`
+        ? `${styles.content_container}  ${styles.content_container_visible}`
+        : `${styles.content_container}`
 
 
     return (<>
