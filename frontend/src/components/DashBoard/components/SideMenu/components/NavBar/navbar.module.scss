@@ -9,7 +9,6 @@
   font-size: 1.2rem;
   display: block;
   margin: 1rem 0 2rem 0;
-  cursor: pointer;
   position: relative;
   color: var(--main-color-white);
 }
@@ -17,6 +16,7 @@
 .item_text {
   position: relative;
   display: inline;
+  cursor: pointer;
 
   @include underline-effect()
 }

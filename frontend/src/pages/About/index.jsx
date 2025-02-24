@@ -2,7 +2,7 @@ import styles from './about.module.scss'
 
 function About() {
     return (
-        <div style={styles.container}>
+        <div className={styles.container}>
 
         </div>
     )
