@@ -16,6 +16,14 @@ function DashBoard() {
     return () => mediaQuery.removeEventListener("change", handleResize);
 }, []);
 
+    useEffect(() => {
+        if (isSideMenuVisible) {
+            document.body.style.overflowY = "hidden";
+        } else {
+            document.body.style.overflowY = "auto";
+        }
+    }, [isSideMenuVisible]);
+
     return (
         <div>
             <SideMenuButton isSideMenuVisible={isSideMenuVisible} setIsSideMenuVisible={setIsSideMenuVisible} />
