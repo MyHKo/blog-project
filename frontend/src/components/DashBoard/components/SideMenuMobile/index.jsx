@@ -20,7 +20,7 @@ function SideMenuMobile({ isVisible, setIsVisible }) {
     return (<>
         <div className={containerStyle}>
             <div className={contentContainerStyle}>
-                <NavBarMobile/>
+                <NavBarMobile setIsMobileMenuVisible={setIsVisible}/>
                 <LogInMobile/>
             </div>
         </div>
