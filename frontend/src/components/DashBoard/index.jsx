@@ -5,7 +5,7 @@ import {useEffect, useState} from "react";
 
 function DashBoard() {
     const [isSideMenuVisible, setIsSideMenuVisible] = useState(false);
-    const [isScreenSmall, setIsScreenSmall] = useState(window.matchMedia("(min-width: 980px)").matches);
+    const [isScreenBig, setIsScreenSmall] = useState(window.matchMedia("(min-width: 980px)").matches);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(min-width: 980px)");
@@ -17,17 +17,17 @@ function DashBoard() {
 }, []);
 
     useEffect(() => {
-        if (isSideMenuVisible) {
-            document.body.style.overflowY = "hidden";
+        if (isSideMenuVisible && !isScreenBig) {
+            document.body.style.overflowY = "hidden"
         } else {
             document.body.style.overflowY = "auto";
         }
-    }, [isSideMenuVisible]);
+    }, [isSideMenuVisible, isScreenBig]);
 
     return (
         <div>
             <SideMenuButton isSideMenuVisible={isSideMenuVisible} setIsSideMenuVisible={setIsSideMenuVisible} />
-            {isScreenSmall
+            {isScreenBig
                 ? <SideMenu />
                 : <SideMenuMobile isVisible={isSideMenuVisible} setIsVisible={setIsSideMenuVisible}/>}
         </div>
