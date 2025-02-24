@@ -1,15 +1,15 @@
-import Home from "@pages/Home";
-import Header from "@components/Header";
-import DashBoard from "@components/DashBoard";
+import Header from '@components/Header'
+import DashBoard from '@components/DashBoard'
+import AppRoutes from '@routing/AppRoutes'
 import './app.module.scss'
 
 function App() {
 
-  return (<>
+  return (<div>
           <Header />
           <DashBoard />
-          <Home />
-      </>
+          <AppRoutes />
+      </div>
   )
 }
 
