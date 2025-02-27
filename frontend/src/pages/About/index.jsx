@@ -3,6 +3,8 @@ import styles from './about.module.scss'
 function About() {
     return (
         <div className={styles.container}>
+            <div className={styles.image_container}>
+            </div>
             <span className={styles.title_main}> Welcome to Our World – A New Fantasy Adventure Awaits! </span>
             <div className={styles.text_body}>
                 Greetings, travelers! We are excited to welcome you to this blog, a dedicated space where we will

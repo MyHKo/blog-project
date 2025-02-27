@@ -1,3 +1,5 @@
+@use "@styles/mixins" as *;
+
 .container {
   margin-top: 4.4rem;
   padding: 1.2rem 1rem 0 11.6rem;
@@ -10,19 +12,7 @@
 }
 
 .image_container {
-  position: fixed;
-  top: 4.4rem;
-  left: 10.5rem;
-  z-index: -1;
-  height: 90vh;
-  width: 100%;
-  overflow: hidden;
-  background-image: url("1.png");
-  background-size: cover;
-
-  @media(max-width: 980px) {
-    left: 0;
-  }
+  @include background_image_container
 }
 
 .title {
