@@ -3,9 +3,39 @@
   padding: 1.2rem 1rem 0 11.6rem;
   min-height: 600px;
   background-color: transparent;
+  font-family: Arial, sans-serif;
 
   @media(max-width: 980px) {
     padding-left: 1.1rem;
   }
 }
 
+.title_main {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.title_secondary {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.text_body {
+  font-size: 1.2rem;
+  margin: 0.8rem 0 2rem 0;
+  max-width: 60rem;
+}
+
+.text_final_remark {
+  font-size: 1.2rem;
+  margin: 0.8rem 0 0.8rem 0;
+  max-width: 60rem;
+}
+
+.point_list {
+  margin-top: 1rem;
+
+  & li {
+    margin-top: 0.8rem;
+  }
+}
