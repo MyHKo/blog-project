@@ -3,7 +3,7 @@ import styles from './header.module.scss';
 function Header() {
     return (
         <header className={styles.container}>
-            <h1 className={styles.title}>Great Table Top Game Blog</h1>
+            <h1 className={styles.title}>Tavern of Stories Untold</h1>
         </header>
     )
 
