@@ -5,6 +5,10 @@ import styles from './navbar.module.scss'
 function NavBar() {
     const navigate = useNavigate()
 
+    const navigateOutside = () => {
+        //TODO: add a link to kickstarter
+    }
+
     return (
         <nav>
             <ul className={styles.list}>
@@ -15,9 +19,11 @@ function NavBar() {
                     navigate('/about')
                 }}>About us</span></span>
                 <span className={styles.list_item}><span className={styles.item_text} onClick={() => {
+                    navigateOutside()
+                }}>Kickstarter</span></span>
+                <span className={styles.list_item}><span className={styles.item_text} onClick={() => {
                     navigate('/editor')
                 }}>Add Post</span></span>
-                <span className={styles.list_item}><span className={styles.item_text}>Kickstarter</span></span>
             </ul>
         </nav>
     )
