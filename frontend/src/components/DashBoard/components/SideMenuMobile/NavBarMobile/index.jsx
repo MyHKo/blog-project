@@ -1,5 +1,4 @@
 import {useNavigate} from "react-router-dom"
-import T from 'prop-types'
 import styles from './navbarmobile.module.scss'
 import PropTypes from "prop-types";
 
@@ -17,6 +16,10 @@ function NavBarMobile({ setIsMobileMenuVisible }) {
                     setIsMobileMenuVisible(false)
                     navigate('/about')
                 }}>About us</span></span>
+                <span className={styles.list_item}><span className={styles.item_text} onClick={() => {
+                    setIsMobileMenuVisible(false)
+                    navigate('/editor')
+                }}>Add Post</span></span>
                 <span className={styles.list_item}><span className={styles.item_text}>Kickstarter</span></span>
             </ul>
         </nav>
