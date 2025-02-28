@@ -3,3 +3,32 @@
 .container {
   @include page_content_container
 }
+
+.quill_container {
+  height: 241.6px;
+  background-color: #FFF9D6;
+  margin-top: 2rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.submit_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 0 0;
+  width: 5rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 10%;
+  background-color: var(--main-color-dark);
+  color: var(--main-color-light);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.95;
+  }
+}
