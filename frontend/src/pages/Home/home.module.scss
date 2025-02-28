@@ -1,17 +1,10 @@
-.container {
-  margin-top: 4.4rem;
-  padding: 1.2rem 1rem 0 11.6rem;
-  min-height: 600px;
-  background-color: transparent;
+@use '@styles/mixins' as *;
 
-  @media(max-width: 980px) {
-    padding-left: 1.1rem;
-  }
+.container {
+  @include page_content_container
 }
 
 .title {
   font-size: 1.7rem;
-  font-family: Arial, sans-serif;
   font-weight: bold;
-
 }
