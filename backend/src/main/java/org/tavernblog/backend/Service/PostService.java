@@ -1,5 +1,7 @@
-package org.taverblog.backend.Service;
+package org.tavernblog.backend.Service;
 
+import org.tavernblog.backend.Model.PostEntity;
+import org.tavernblog.backend.Repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +14,7 @@ public class PostService {
     private PostRepository postRepository;
 
     public List<PostEntity> getPosts() {
-        return postRepository.findAll(user);
+        return postRepository.findAll();
     }
 
     public PostEntity createPost(PostEntity post) {
