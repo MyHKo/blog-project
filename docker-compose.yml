@@ -18,6 +18,17 @@ services:
     build: ./frontend
     ports:
       - "80:80"
+
+  backend:
+    image: blog-project-back:latest
+    build: ./backend
+    working_dir: /backend
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports: 
+      - "8080:8080"
+    depends_on:
+      - database
   
 volumes:
   databaseVolume:
