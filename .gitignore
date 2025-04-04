@@ -324,4 +324,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Init scripts
+init_scripts/*
+
 # End of https://www.toptal.com/developers/gitignore/api/node,webstorm,windows,git,react,visualstudiocode
