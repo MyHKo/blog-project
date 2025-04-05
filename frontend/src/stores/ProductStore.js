@@ -5,7 +5,7 @@ const useProductStoreBase = create((set) => {
 
         const fetchData = async () => {
             try {
-                const response = await fetch("https://backend:8080/posts");
+                const response = await fetch("http://backend:8080/posts");
                 const data = await response.json();
                 set({products: data})
             }
