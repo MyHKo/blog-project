@@ -25,6 +25,7 @@ services:
     working_dir: /backend
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_URL: ${MYSQL_URL}
     ports: 
       - "8080:8080"
     depends_on:
