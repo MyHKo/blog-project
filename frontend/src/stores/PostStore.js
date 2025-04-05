@@ -1,26 +1,23 @@
-import { create } from "zustand";
-import createSelectors from "./CreateSelectors";
+import { create } from 'zustand'
 
-const usePostStoreBase = create((set) => {
+const usePostStore = create((set) => {
 
         const fetchData = async () => {
             try {
                 const response = await fetch("http://backend:8080/posts");
                 const data = await response.json();
-                set({products: data})
+                set({posts: data})
             }
             catch(e) {
-                console.error(e);
+                console.error("Error in promis", e);
             }
         }
 
         fetchData();
 
         return {
-            products: []
+            posts: []
         }
     });
-
-const usePostStore = createSelectors(usePostStoreBase);
 
 export { usePostStore };

@@ -3,7 +3,7 @@ import styles from './home.module.scss'
 import Post from "@components/Post/index.jsx";
 
 function Home() {
-    const posts = usePostStore().use((state) => state.products);
+        const { posts}  = usePostStore()
 
     return (
         <div className={styles.container}>
