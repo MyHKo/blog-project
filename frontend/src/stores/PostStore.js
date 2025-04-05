@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import createSelectors from "./CreateSelectors";
 
-const useProductStoreBase = create((set) => {
+const usePostStoreBase = create((set) => {
 
         const fetchData = async () => {
             try {
@@ -21,6 +21,6 @@ const useProductStoreBase = create((set) => {
         }
     });
 
-const useProductStore = createSelectors(useProductStoreBase);
+const usePostStore = createSelectors(usePostStoreBase);
 
-export { useProductStore };
+export { usePostStore };
