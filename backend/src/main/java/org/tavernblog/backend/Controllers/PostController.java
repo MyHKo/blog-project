@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import jakarta.servlet.http.HttpServletResponse;
 
 import java.util.List;
 
@@ -18,7 +19,8 @@ public class PostController {
     private PostService postService;
 
     @GetMapping
-    public List<PostEntity> allPosts() {
+    public List<PostEntity> allPosts(HttpServletResponse response) {
+        response.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
         return postService.getPosts();
     }
 }
