@@ -8,9 +8,12 @@ function Home() {
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Latest Blog Posts</h1>
+            <div className={styles.content_container}>
             {posts.map((post) => (
                 <Post key={post.id} title={post.title} body={post.body} />
             ))}
+            <Post key={12} title={"My fissssssssssssssssssssssssssssssssssssssssssssssssssssrst post"} body={"SUCKING DICKS AHAHAHAHHA"} />
+            </div>
         </div>
     )
 }
