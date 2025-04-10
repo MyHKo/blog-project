@@ -7,7 +7,9 @@
 .content_container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
 }
 
 .title {
