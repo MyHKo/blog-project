@@ -17,7 +17,7 @@ services:
     image: blog-project-front:latest
     build: ./frontend
     ports:
-      - "80:80"
+      - "3000:80"
 
   backend:
     image: blog-project-back:latest
