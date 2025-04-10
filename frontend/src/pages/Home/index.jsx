@@ -12,7 +12,6 @@ function Home() {
             {posts.map((post) => (
                 <Post key={post.id} title={post.title} body={post.body} />
             ))}
-            <Post key={12} title={"My fissssssssssssssssssssssssssssssssssssssssssssssssssssrst post"} body={"SUCKING DICKS AHAHAHAHHA"} />
             </div>
         </div>
     )
